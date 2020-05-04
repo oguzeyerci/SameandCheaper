@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Same &amp; Cheaper</string>
+    <string name="title_activity_ana_ekran"><![CDATA[Same&Cheaper]]></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="indirimler">İndirimler</string>
+    <string name="profil">Profil</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="same_cheaper"><![CDATA[Same&Cheaper]]></string>
+
+    <string name="isim">Ali Atay</string>
+    <string name="id">aliatay3</string>
+    <string name="mail">aliatay@gmail.com</string>
+    <string name="telefon">5054567812</string>
+    <string name="adres">Serhat</string>
+    <string name="title_activity_ana_ekran_bottom">ana_ekran_bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="türler">
+        <item>Market</item>
+        <item>Gida</item>
+        <item>Teknoloji</item>
+        <item>Kiyafet</item>
+        <item>Spor</item>
+        <item>Kitap</item>
+        <item>Müzik</item>
+        <item>Kirtasiye</item>
+        <item>Evaletleri</item>
+    </string-array>
+</resources>
