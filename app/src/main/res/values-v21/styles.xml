@@ -1,8 +1,8 @@
 <resources>
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/lacivert</item>
+    </style>
+    <style name="DialogeTheme" parent="Theme.AppCompat.Dialog.Alert">
     </style>
 </resources>
