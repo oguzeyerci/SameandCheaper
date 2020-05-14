@@ -32,7 +32,6 @@ public class sqlite extends SQLiteOpenHelper {
     db.execSQL(sql);
     db.execSQL(sql2);
     db.execSQL(sql3);
-    Log.i("qTAG", "eeeeeeeeeee");
     }
 
     @Override
