@@ -21,7 +21,7 @@ public class sqlite extends SQLiteOpenHelper {
     private static final String favoriler_tablosu="favoriler_tablosu";
 
     public sqlite(@Nullable Context context) {
-        super(context,"indirimprojesi.db", null, 6);
+        super(context,"indirimprojesi.db", null, 7);
     }
 
     @Override

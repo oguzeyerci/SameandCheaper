@@ -69,13 +69,13 @@ public class HomeFragment extends Fragment {
         turu.add("Spor");
         turu.add("Müzik");
         turu.add("Kirtasiye");
+        gonderen.add("Hatice Aslan");
         gonderen.add("Oğuzhan Eyerci");
+        gonderen.add("Onur Eyerci");
+        gonderen.add("Mehmet Yiğiner");
+        gonderen.add("Zeynep Yılmaz");
         gonderen.add("Oğuzhan Eyerci");
-        gonderen.add("Oğuzhan Eyerci");
-        gonderen.add("Oğuzhan Eyerci");
-        gonderen.add("Oğuzhan Eyerci");
-        gonderen.add("Oğuzhan Eyerci");
-        gonderen.add("Oğuzhan Eyerci");
+        gonderen.add("Ali Tandoğan");
 
         //db.insertIndirim("teknoloji","Logitech G29","2499TL","Ankamall MediaMarkt");
        List<indirimClass> asd= db.listele();

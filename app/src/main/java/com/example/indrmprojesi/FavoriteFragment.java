@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SettingsFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
     profileClass pro=new profileClass();
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
