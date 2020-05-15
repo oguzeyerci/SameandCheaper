@@ -29,7 +29,7 @@
             android:layout_below="@+id/imgUser"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="8dp"
-            android:textColor="@color/lacivert"
+            android:textColor="@color/beyaz"
             android:textSize="32sp"
             android:textStyle="bold|italic"/>
 
