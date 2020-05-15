@@ -29,9 +29,9 @@
             android:layout_below="@+id/imgUser"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="8dp"
-            android:fontFamily="sans-serif-light"
-            android:textColor="#ffffff"
-            android:textSize="32sp"/>
+            android:textColor="@color/lacivert"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"/>
 
 
     </RelativeLayout>
@@ -62,7 +62,8 @@
                     android:text="Mail Adresi"
                     android:textColor="@color/siyah"
                     android:textSize="13sp"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/mail_text"
@@ -97,7 +98,8 @@
                     android:text="Telefon Numarası"
                     android:textColor="@color/siyah"
                     android:textSize="13sp"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/telefon_text"
