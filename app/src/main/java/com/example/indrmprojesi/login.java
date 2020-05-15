@@ -3,10 +3,12 @@ package com.example.indrmprojesi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +18,10 @@ public class login extends AppCompatActivity {
     EditText mail_ge,parola_ge;
     EditText isim_ko,telefon_ko,parola_ko,mail_ko;
     sqlite db;
+    private SharedPreferences loginPreferences;
+    private SharedPreferences.Editor loginPrefsEditor;
+    private Boolean saveLogin;
+    private CheckBox saveLoginCheckBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,16 @@ public class login extends AppCompatActivity {
         buton= findViewById(R.id.girisbutton);
         parola_ge=findViewById(R.id.parola_ge);
         mail_ge=findViewById(R.id.mail_ge);
+        saveLoginCheckBox=findViewById(R.id.checkBox);
+        loginPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        loginPrefsEditor = loginPreferences.edit();
+
+        saveLogin = loginPreferences.getBoolean("saveLogin", false);
+        if (saveLogin == true) {
+            mail_ge.setText(loginPreferences.getString("username", ""));
+            parola_ge.setText(loginPreferences.getString("password", ""));
+            saveLoginCheckBox.setChecked(true);
+        }
 
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +64,17 @@ public class login extends AppCompatActivity {
 
         String maill=mail_ge.getText().toString().trim();
         String parolaa=parola_ge.getText().toString().trim();
+
+        if (saveLoginCheckBox.isChecked()) {
+            loginPrefsEditor.putBoolean("saveLogin", true);
+            loginPrefsEditor.putString("username", maill);
+            loginPrefsEditor.putString("password", parolaa);
+            loginPrefsEditor.commit();
+        } else {
+            loginPrefsEditor.clear();
+            loginPrefsEditor.commit();
+        }
+
         boolean abc=db.loginkontrol(maill,parolaa);
 
         if(abc==true){
